@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Learning Resources</title>
+    <link rel="stylesheet" href="end.css">
+    <style>
+        /* CSS for link styling */
+        a {
+            text-decoration: none;
+            color: #007bff; /* Blue color */
+            transition: color 0.3s ease; /* Smooth transition for color change */
+        }
+
+        a:hover {
+            color: #0056b3; /* Darker blue color on hover */
+        }
+
+        /* CSS for responsive design */
+        @media screen and (max-width: 600px) {
+            /* Adjust styles for small screens */
+            h1 {
+                font-size: 20px; /* Decrease font size for headings */
+            }
+        }
+
+        /* CSS for additional layout */
+        .btvn {
+            text-align: center; /* Center align content */
+            margin-top: 20px; /* Add some space between navigation and additional content */
+        }
+
+        .btvn img {
+            max-width: 100%; /* Ensure the image doesn't exceed its container width */
+            height: auto; /* Maintain aspect ratio */
+            display: block; /* Remove any extra spacing caused by default inline behavior */
+            margin: 0 auto; /* Center the image horizontally */
+        }
+
+        /* CSS for button */
+        .custom-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .custom-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>Learn CSS</h1>
+        <ul>
+            <li><a href="https://www.w3schools.com/css/css_padding.asp" title="Learn about CSS padding">Padding</a></li>
+            <li><a href="https://www.w3schools.com/css/css_margin.asp" title="Learn about CSS margin">Margin</a></li>
+            <li><a href="https://www.w3schools.com/css/css_positioning.asp" title="Learn about CSS positioning">Position</a></li>
+            <li><a href="https://www.w3schools.com/css/css_align.asp" title="Learn about CSS alignment">Align</a></li>
+        </ul>
+    </nav>
+
+    <div class="btvn">
+        <h1>Trình bày lại giao diện không của hình ảnh sau:</h1>
+        <img src="btvn.png" alt="hình ảnh giao diện">
+        <ul>
+            <h2>Yêu cầu:</h2>
+            <li>Button phải bấm được và khi kéo chuột vào button thì sẽ đổi màu or phóng to ra</li>
+            <li>Ảnh clb có thể được thay bằng ảnh khác tuỳ ý muốn</li>
+            <li>DL: đến thứ 3 ngày 3 tháng 4</li>
+        </ul>
+        <button class="custom-button">Click Me</button>
+    </div>
+</body>
+</html>
